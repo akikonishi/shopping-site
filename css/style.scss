@@ -188,7 +188,7 @@ header{
         
       .newitem{
         width:30%;
-        padding:7px;
+        padding:5px;
         margin:0 0 10px 0;
       }
       
@@ -224,6 +224,18 @@ header{
      margin-bottom:10px;
    }
  }
+ 
+  @media (max-width: 879px){
+    
+    .main_contents{
+      .main_flex_box{
+        .main_contents_box{
+          width:100%;
+        }
+      }
+    }
+    
+  }
 
  
  
@@ -475,10 +487,22 @@ footer{
   }
 }
 
+//<div class="cm_box"><div class="cm_box-inner"></div></div>
 .main_menu{
 
     .cm_box{
-      height:180px;
+      position: relative;
+      width:100%;
+      height:40px;
+      padding: 75% 0 0;
+      
+      .cm_box-inner{
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+      }
     }
     
     //スマフォ版はいらないので指定すること！
@@ -692,7 +716,7 @@ input, textarea, select, fieldset{
   }
 }
 
-@media (min-width: 551px){
+@media (min-width: 780px){
   
   .p-q-cb{
     display: flex;
@@ -704,6 +728,7 @@ input, textarea, select, fieldset{
     .cart_bt{
       width:40%;
       text-align:right;
+      margin-left:3px;
     }
     
   }
